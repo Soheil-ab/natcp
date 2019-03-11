@@ -1,0 +1,11 @@
+diff -rpuN mahimahi-org/src/frontend/link_queue.cc mahimahi/src/frontend/link_queue.cc
+--- mahimahi-org/src/frontend/link_queue.cc	2018-10-06 00:23:48.351097300 -0400
++++ mahimahi/src/frontend/link_queue.cc	2018-10-09 22:38:21.850303200 -0400
+@@ -79,6 +79,9 @@ LinkQueue::LinkQueue( const string & lin
+         if ( prefix ) {
+             *log_ << "# mahimahi config: " << prefix << endl;
+         }
++        std::unique_ptr<std::ofstream> log__;
++        log__.reset(new ofstream("basetime"));
++        *log__ << initial_timestamp()+base_timestamp_ << endl;
+     }
