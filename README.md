@@ -1,5 +1,7 @@
 # NATCP v1.0
 
+Here is the first version of NATCP/NACubic as appeared in "Toward Optimal Performance with Network Assisted TCP at Mobile Edge <USENIX HotEdge'19>" paper (https://www.usenix.org/conference/hotedge19/presentation/abbasloo). 
+
 Installation Guide
 ==================
 
